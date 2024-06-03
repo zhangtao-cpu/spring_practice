@@ -1,14 +1,17 @@
 server:
   port: 8080
+##如果logback配置文件不使用配置文件默认的名称logback.xml 则需要在此处配置文件地址和名称
+#logging:
+#  config: classpath:logback.xml
 spring:
   datasource:
-    url: jdbc:mysql://192.168.121.135:3306/spring_practice?useSSL=false&autoReconnect=true&characterEncoding=utf8
+    url: jdbc:mysql://192.168.137.100:3306/test_db?useSSL=false&autoReconnect=true&characterEncoding=utf8
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: 123456
   cloud:
     nacos:
-      serverAddr: 127.0.0.1:8848
+      serverAddr: 192.168.137.100:8848
     config:
       import:
         - nacos:nacos-config-example.properties?refresh=true

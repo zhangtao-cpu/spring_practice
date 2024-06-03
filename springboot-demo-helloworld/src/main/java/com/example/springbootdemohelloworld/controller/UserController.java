@@ -5,7 +5,8 @@ import com.example.springbootdemohelloworld.entity.User;
 import com.example.springbootdemohelloworld.entity.query.UserQueryBean;
 import com.example.springbootdemohelloworld.entity.response.ResponseResult;
 import com.example.springbootdemohelloworld.service.IUserService;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,7 +18,7 @@ import java.util.List;
  * @Author zhangtao
  * @Date 2024/1/19 16:14
  */
-@Slf4j
+
 @RestController
 @RequestMapping("/user")
 public class UserController {
@@ -25,9 +26,11 @@ public class UserController {
     @Autowired
     private IUserService userService;
 
+    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
+
     @RequestMapping("/getUser")
     public String getUser(){
-        log.info("getUser response!!!");
+        logger.info("getUser response!!!");
         return "zhangtao";
     }
 
@@ -52,6 +55,7 @@ public class UserController {
 
     @GetMapping("/list")
     public ResponseResult<List<User>> list(UserQueryBean userQueryBean) {
+        logger.info("这是调用user的全部信息");
         return ResponseResult.success(userService.findList(userQueryBean));
     }
 
