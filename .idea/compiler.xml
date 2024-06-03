@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot-demo-helloworld" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="account-service" target="1.5" />
+      <module name="business-service" target="1.5" />
+      <module name="cloud-provider" target="8" />
+      <module name="integrated-account" target="1.5" />
+      <module name="integrated-common" target="1.5" />
+      <module name="integrated-frontend" target="1.5" />
+      <module name="integrated-gateway" target="1.5" />
+      <module name="integrated-order" target="1.5" />
+      <module name="integrated-praise-consumer" target="1.5" />
+      <module name="integrated-praise-provider" target="1.5" />
+      <module name="integrated-storage" target="1.5" />
+      <module name="nacos-config-example" target="1.5" />
+      <module name="nacos-discovery-consumer-example" target="1.5" />
+      <module name="nacos-discovery-consumer-sclb-example" target="1.5" />
+      <module name="nacos-discovery-example" target="1.5" />
+      <module name="nacos-discovery-provider-example" target="1.5" />
+      <module name="nacos-discovery-spring-cloud-config-client-example" target="1.5" />
+      <module name="nacos-discovery-spring-cloud-config-server-example" target="1.5" />
+      <module name="nacos-gateway-discovery-example" target="1.5" />
+      <module name="nacos-gateway-example" target="1.5" />
+      <module name="nacos-gateway-provider-example" target="1.5" />
+      <module name="nacos-reactivediscovery-consumer-example" target="1.5" />
+      <module name="order-service" target="1.5" />
+      <module name="rocketmq-broadcast-consumer1-example" target="1.5" />
+      <module name="rocketmq-broadcast-consumer2-example" target="1.5" />
+      <module name="rocketmq-broadcast-producer-example" target="1.5" />
+      <module name="rocketmq-comprehensive-example" target="1.5" />
+      <module name="rocketmq-delay-consume-example" target="1.5" />
+      <module name="rocketmq-example-common" target="1.5" />
+      <module name="rocketmq-orderly-consume-example" target="1.5" />
+      <module name="rocketmq-pollable-consume-example" target="1.5" />
+      <module name="rocketmq-sql-consume-example" target="1.5" />
+      <module name="rocketmq-tx-example" target="1.5" />
+      <module name="sentinel-circuitbreaker-example" target="1.5" />
+      <module name="sentinel-core-example" target="1.5" />
+      <module name="sentinel-openfeign-example" target="1.5" />
+      <module name="sentinel-resttemplate-example" target="1.5" />
+      <module name="sentinel-spring-cloud-gateway-example" target="1.5" />
+      <module name="sentinel-webflux-example" target="1.5" />
+      <module name="spring-cloud-alibaba-examples" target="1.5" />
+      <module name="spring-cloud-alibaba-sidecar-consul-example" target="1.5" />
+      <module name="spring-cloud-alibaba-sidecar-nacos-example" target="1.5" />
+      <module name="spring-cloud-bus-rocketmq-example" target="1.5" />
+      <module name="springcloud-alibaba-demo" target="8" />
+      <module name="springcloud-blog" target="22" />
+      <module name="storage-service" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="nacos-config-example" options="-parameters" />
+      <module name="springboot-demo-helloworld" options="-parameters" />
+      <module name="springcloud-alibaba-demo" options="" />
+      <module name="springcloud-blog" options="-parameters" />
+    </option>
+  </component>
+</project>
