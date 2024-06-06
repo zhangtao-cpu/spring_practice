@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>springcloud_demo</module>
+        <module>springboot-demo-helloworld</module>
     </modules>
 
 

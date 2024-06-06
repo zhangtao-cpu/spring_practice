@@ -1,8 +1,7 @@
 package com.example.springcloud_demo.controller;
 
 import com.example.springcloud_demo.entity.Employee;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,8 +14,8 @@ import javax.servlet.http.HttpServletRequest;
  */
 @Controller
 @RequestMapping("/param")
+@Slf4j
 public class TestParamController {
-
 
     // 普通请求方式
     // 通过访问：GET http://localhost:8080/param/add?name=张三&pwd=123456
@@ -38,8 +37,8 @@ public class TestParamController {
     @RequestMapping(value = "/add", method = RequestMethod.GET,produces = {"application/json;charset=UTF-8"})
     @ResponseBody
     public String addUser(String name,String pwd){
-//        logger.debug("name:"+name+",pwd:"+pwd);
 //        log.debug("name:"+name+",pwd:"+pwd);
+        log.info("name:"+name+",pwd:"+pwd);
         return "name:" + name + ",pwd:" + pwd;
     }
 

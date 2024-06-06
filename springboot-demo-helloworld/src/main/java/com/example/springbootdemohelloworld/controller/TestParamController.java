@@ -1,7 +1,6 @@
 package com.example.springbootdemohelloworld.controller;
 
 import com.example.springbootdemohelloworld.entity.query.Employee;
-import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -41,8 +40,7 @@ public class TestParamController {
     @RequestMapping(value = "/add", method = RequestMethod.GET,produces = {"application/json;charset=UTF-8"})
     @ResponseBody
     public String addUser(String name,String pwd){
-        logger.debug("name:"+name+",pwd:"+pwd);
-//        log.debug("name:"+name+",pwd:"+pwd);
+        logger.info("name:"+name+",pwd:"+pwd);
         return "name:" + name + ",pwd:" + pwd;
     }
 

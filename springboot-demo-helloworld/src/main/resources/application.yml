@@ -1,6 +1,6 @@
 server:
   port: 8080
-##如果logback配置文件不使用配置文件默认的名称logback.xml 则需要在此处配置文件地址和名称
+##如果logback配置文件不使用配置文件默认的名称logback.xml 则需要在此处配置文件地址和名称,这里启动时删除，不然报编码错
 #logging:
 #  config: classpath:logback.xml
 spring:
