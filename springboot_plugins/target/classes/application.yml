@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: springboot_plugins
+  kafka:
+    bootstrap-servers: 192.168.137.100:9092
+#    consumer:
+#      auto-offset-reset: earliest
+
+server:
+  port: 8086
