@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/nacos-gateway-example/pom.xml" />
         <option value="$PROJECT_DIR$/nacos-discovery-example/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_plugins/pom.xml" />
       </list>
     </option>
   </component>
